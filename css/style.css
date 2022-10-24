@@ -1,0 +1,383 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    box-sizing: border-box;
+    background-color: #213B7E;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    align-items: center;
+    position: relative;
+    
+}
+
+.site-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    list-style: none;
+    padding: 0ch;
+    margin: 0rem;
+    min-height: 80px;
+     
+}
+
+.site-menu >li {
+ display: flex;
+}
+
+.link{
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    text-decoration: none;
+}
+
+.page{
+margin: 0px;
+}
+
+.login-button{
+    display: flex;
+    width: 153px;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #EA5D21;
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration: none; 
+}
+
+/*login-popup*/
+.login-popup{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    max-height: 418px;
+    padding: 26px 28px 56px;
+    background-color: white;
+    border: 1px solid #213B7E;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+ .login-heading{
+    display: flex;
+    justify-content: center;
+    min-width: 158px;
+    max-height: 28px;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+ .login-input, .password-input{
+    min-width: 444px;
+    max-height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding-top: 17px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    margin: 23px;
+ }
+
+ .popup-button{
+    min-width: 153px;
+    min-height: 50px;
+    background: #EA6113;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 23px;
+   }
+
+ /* main */
+.main{
+    box-sizing: border-box;
+    max-width: 911px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+    /*padding: 0 2vw;*/
+}
+
+.office{
+    max-width: 523px;
+    width: 100%;
+    height: 316px;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.main-heading{
+    font-family: Roboto;
+    font-style: bold;
+    font-size: 30px;
+    line-height: 1.17;
+}
+
+h2{
+    font-family: Roboto;
+    font-style: regular;
+    font-size: 25px;
+    line-height: 29px;
+    }
+
+em{
+    color: #CF5510;
+}
+
+.intro-text{
+    margin: 0;
+    max-width: 634px;
+    width: 100%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.intro-aside{
+    width: 183px;
+    height: 79.17px;
+    font-family: Lobster;
+    font-size: 36px;
+font-weight: 400;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+color: #646464;
+}
+
+.intro-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     }
+
+/*students*/
+
+.main-students{
+    max-width: 1202px;
+}
+
+.avatar >img{
+    width: 200px;
+    min-height: 270px;
+        }
+
+/*.expert{
+
+
+}
+
+.novichok{
+
+}*/
+   
+.fio{
+    display: block;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+   }
+
+.students{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1202px;
+    gap: 50px;
+      }
+
+.student{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 200px;
+    max-width: calc(100%/5);
+    background-color: #d9a73045;
+}
+
+.student-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(29, 37, 37);
+    flex: 1 1 0;
+    width: 200px;
+}
+
+.contacts{
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+/*about course*/
+.about-text{
+font-family: Roboto;
+font-style: Regular;
+font-size: 25px;
+Line-height: 29px;
+}
+
+.main-about{
+width: 820px;
+}
+
+.main-contacts{
+max-width: 100%;
+
+}
+
+.about-video{
+min-height: 550px;
+width: 100%;
+}
+
+.contacts-about{
+   max-width: 820px;
+   margin: 10px auto;
+}
+
+.contacts-maps{
+box-sizing: border-box;
+max-width: 1300px;
+margin: 15px auto;
+margin-bottom: 15px;
+padding: 0 16px;
+}
+
+.yandex-map{
+width: 100%;
+}
+
+.about-address{
+font-family: Roboto;
+font-style: Regular;
+font-size: 18px;
+line-height: 21px; 
+font-weight: 400;
+max-width: 820px;
+margin: 10px auto;
+}
+
+.about-tel{
+    display: block;
+font-family: Roboto;
+font-style: regular;
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+max-width: 820px;
+margin: 10px auto;
+}
+
+/*footer*/
+.footer{
+    box-sizing: border-box;
+    background-color: #213B7E;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 60px;
+    padding: 0 16px;    
+}
+
+.copirite{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.innop-link{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*Responsive*/
+@media (max-width: 630px) {
+    .header{
+        justify-content: center;
+        padding: 1em 16px;
+        gap: 1em;
+    }
+
+@media (max-width: 1150px){
+    .student{max-width: calc(100%/5);}
+}
+
+    .site-logo{
+        width: 100%;
+        min-height: 80px;
+    }
+    .site-menu{
+        justify-content: center;
+    }
+}
+
+/* JS */
+.active-link{
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration: none;
+}
+
+.show-popup{
+    display: block;
+    
+}
+
+
