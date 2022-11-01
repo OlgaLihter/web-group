@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-   </head>
-<body class="page">
+    <script defer src="../JS/login-popup.js"></script>
+</head>
+<body class="page popup-backdrop">
         <header class="header">
             <img class="site-logo" src="../img/logo.svg" alt="Логотип">
             <ul class="site-menu">
@@ -20,6 +21,14 @@
             <li><a class="link" href="contacts.html">контакты</a></li>
         </ul>
         <a class="login-button" href="../login.html">Войти</a>
+        <div class="login-popup show-popup">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form" action="#" method="get">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required="">
+                <input class="password-input" name="password" type="password" placeholder="Пароль" required="">
+                <button class="popup-button" type="submit">Войти</button>
+                </form>
+            </div>
     </header>
     <main class="main main-about">
         <h1 class="main-heading">О курсе 📱</h1>

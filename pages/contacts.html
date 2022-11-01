@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script defer src="../JS/login-popup.js"></script>
     </head>
-    <body class="page">
+    <body class="page popup-backdrop">
         <header class="header">
         <img class="site-logo" src="../img/logo.svg" alt="Логотип">
         <ul class="site-menu">
@@ -20,11 +21,19 @@
             <li><a class="link active-link" href="#">Контакты</a></li>
         </ul>
         <a class="login-button" href="login.html">Войти</a>
+        <div class="login-popup show-popup">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form" action="#" method="get">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required="">
+                <input class="password-input" name="password" type="password" placeholder="Пароль" required="">
+                <button class="popup-button" type="submit">Войти</button>
+                </form>
+            </div>
     </header>
     
     <main class="main main-contacts">
         <h1 class="main-heading contacts-about">Как нас найти 🗺️️</h1>
-        <div class="contacts-maps" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/universitet_innopolis/1297240913/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Университет Иннополис</a><a href="https://yandex.ru/maps/121642/innopolis/category/university_college/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Иннополисе</a><iframe class="yandex-map" Ssrc="https://yandex.ru/map-widget/v1/-/CCUZNSFH-B" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="contacts-map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/innopolis/769768365/?ll=48.736423%2C55.751483&utm_medium=mapframe&utm_source=maps&z=12.96" style="color:#eee;font-size:12px;position:absolute;top:14px;">Иннополис — Яндекс Карты</a><iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CCU6MUfkgA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         <h2 class="contacts">Наши контакты</h2>
             <p class="about-address">Адрес: Республика Татарстан, Верхнеуслонский район, Иннополис. Университетская набережная ул.,1</p>
             <a class="about-tel" href="tel:+78432039253">Тел.+7 (843) 203-92-53</a>
